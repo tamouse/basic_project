@@ -1,0 +1,32 @@
+{
+  "name": "basic_project",
+  "version": "1.0.0",
+  "description": "A very basic web site project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamouse/basic_project.git"
+  },
+  "author": "tamouse@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tamouse/basic_project/issues"
+  },
+  "homepage": "https://github.com/tamouse/basic_project#readme",
+  "devDependencies": {
+    "babel-core": "^6.18.0",
+    "babel-loader": "^6.2.5",
+    "babel-register": "^6.18.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.24.0",
+    "inline-manifest-webpack-plugin": "^3.0.1",
+    "progress-bar-webpack-plugin": "^1.9.0",
+    "webpack": "^1.13.2",
+    "webpack-config-utils": "^2.1.0",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-validator": "^2.2.9"
+  }
+}
