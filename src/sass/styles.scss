@@ -1,3 +1,14 @@
+// The Inverted Triangle CSS structure
+//                ______________
+//             ^  \____________/  |               Settings
+//             |   \__________/   |               Tools
+//             |    \________/    |               General
+//  generality |     \______/     | specificity   Elements
+//             |      \____/      |               Objects
+//             |       \__/       |               Components
+//             |        \/        v               Overrides
+//
+
 @import "1.setting/index.scss";
 @import "2.tools/index.scss";
 @import "3.general/index.scss";

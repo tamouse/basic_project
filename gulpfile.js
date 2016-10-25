@@ -4,6 +4,8 @@ var gulp = require('gulp');
 
 
 var browserSync = require('browser-sync');
+var gulpUtil = require('gulp-util');
+var gulpEjs = require('gulp-ejs');
 var help = require('gulp-task-listing');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
@@ -15,6 +17,7 @@ var sourceDirs, destDirs;
 
 sourceDirs = { src: './src' };
 sourceDirs.htmlFiles = sourceDirs.src + '/html/**/*.html';
+sourceDirs.templates = sourceDirs.src + '/templates/*.ejs';
 sourceDirs.javascripts = sourceDirs.src + '/js/**/*.js';
 sourceDirs.webpack_entry = sourceDirs.src + '/js/index.js';
 sourceDirs.stylesheets = [
@@ -106,6 +109,15 @@ gulp.task('images', function () {
 });
 gulp.task('images:watch', function () {
     gulp.watch(sourceDirs.images, ['images']);
+});
+
+
+
+gulp.task('templates', function () {
+   return gulp.src(sourceDirs.templates)
+       .pipe(gulpEjs().on('error', gulpUtil.log))
+       .pipe(gulp.dest(destDirs.dest))
+       .pipe(browserSync.stream());
 });
 
 
