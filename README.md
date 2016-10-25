@@ -1,11 +1,28 @@
 # Basic Web Project
 
-Outlines a very basic web project for intermediate classes,
-that includes:
+Outlines a basic web project for intermediate and classes, that includes:
 
+- gulp
 - sass/scss
-- javascript
-- webpack and webpack dev server
+- bundled (webpacked) javascript
 - npm scripts
 
+## Installation
 
+    git clone https://github.com/tamouse/basic_project.git my_cool_project
+    cd my_cool_project
+    git remote remove origin
+    hub create
+    
+## Initialization
+
+    npm install
+    
+## Development
+
+    npm start
+    
+## Build
+
+    npm run build
+    

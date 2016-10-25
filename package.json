@@ -6,6 +6,8 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "gulp build",
+    "prestart": "rimraf dist",
+    "start": "gulp serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,19 +22,14 @@
   "homepage": "https://github.com/tamouse/basic_project#readme",
   "devDependencies": {
     "browser-sync": "^2.17.5",
-    "child_process": "^1.0.2",
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.13",
-    "gulp-concat": "^2.6.0",
-    "gulp-notify": "^2.2.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.5.4",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^2.2.0",
     "gulp-task-listing": "^1.0.1",
-    "gulp-uglify": "^2.0.0",
-    "pump": "^1.0.1"
+    "rimraf": "^2.5.4",
+    "webpack": "^1.13.2",
+    "webpack-stream": "^3.2.0"
   }
 }
